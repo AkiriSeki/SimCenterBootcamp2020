@@ -9,3 +9,10 @@
 //
 // NOTE: perform the transformation inside a function that cannot be named main
 
+
+
+int main(int argc, char **argv){
+
+  return 0;
+
+}

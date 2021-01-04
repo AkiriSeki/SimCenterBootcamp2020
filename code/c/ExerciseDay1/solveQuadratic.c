@@ -21,6 +21,26 @@ int main(int argc, char **argv) {
   float b = atof(argv[2]);
   float c = atof(argv[3]);
 
+  float x1, x2;
+  x1=x2=0;
+  if(a != 0 && b!=0){
+    if(b*b>(4*a*c)){
+      x1 = -b+sqrt(b*b-4*a*c)/(2*a);
+      x2 = -b-sqrt(b*b-4*a*c)/(2*a);
+      printf("The answer is %e and %e", x1, x2);
+    }
+    else{
+      printf("No real solution");
+    }
+  }
+  else if(a == 0 && b != 0){
+    x1 = -b/c;
+    printf("Linear Eq. X %e \n", x1);
+  }
+  else{
+    printf("No quadratic solution");
+  }
+
   printf("Have a Nice Day!\n");
   return 0;
 }
